@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Crew_Size__c</fullName>
+    <description>Crew Size Description</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Crew Size Help</inlineHelpText>
+    <label>Crew Size</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>ShipSize__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>SpaceshipCrew</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>S</controllingFieldValue>
+            <controllingFieldValue>M</controllingFieldValue>
+            <controllingFieldValue>L</controllingFieldValue>
+            <controllingFieldValue>XL</controllingFieldValue>
+            <valueName>&lt; 100</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>M</controllingFieldValue>
+            <controllingFieldValue>L</controllingFieldValue>
+            <controllingFieldValue>XL</controllingFieldValue>
+            <valueName>100 - 200</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>L</controllingFieldValue>
+            <controllingFieldValue>XL</controllingFieldValue>
+            <valueName>200 - 500</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>XL</controllingFieldValue>
+            <valueName>&gt; 500</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

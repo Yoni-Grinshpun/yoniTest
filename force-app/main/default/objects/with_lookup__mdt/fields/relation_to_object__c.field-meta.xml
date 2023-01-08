@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>relation_to_object__c</fullName>
+    <description>yes yes relation to object</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>relation to object</label>
+    <referenceTo>EntityDefinition</referenceTo>
+    <relationshipLabel>with_lookups</relationshipLabel>
+    <relationshipName>with_lookups</relationshipName>
+    <required>false</required>
+    <type>MetadataRelationship</type>
+    <unique>false</unique>
+</CustomField>

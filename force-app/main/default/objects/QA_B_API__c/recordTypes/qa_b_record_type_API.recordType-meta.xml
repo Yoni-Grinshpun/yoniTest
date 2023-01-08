@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>qa_b_record_type_API</fullName>
+    <active>true</active>
+    <description>for qa_b</description>
+    <label>qa_b_record_type</label>
+    <picklistValues>
+        <picklist>Status_API__c</picklist>
+        <values>
+            <fullName>Critical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Minor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Release Blocker</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Show stopper</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>updateMe_API</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

@@ -1,0 +1,9 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" 
+                access="global" controller="GetData" > 
+	 <aura:attribute name="QA_A_Form" type="QA_A_API__c" default="{'sobjectType': 'QA_A_API__c'}" />
+     <aura:attribute name="ForDesign" type="String" access="global"/>
+     <lightning:input label="Enter your Name" name="QAAname" value="{!v.QA_A_Form.Name}" />
+    
+     <lightning:input aura:id="checkBox" type="checkbox" onchange="{!c.onClickCheckBox}" label="Are you available on weekends to attend the classes?" name="firstcheckbox" />
+     <lightning:button label="submit" onclick="{!c.doSubmit}"></lightning:button>	
+</aura:component>

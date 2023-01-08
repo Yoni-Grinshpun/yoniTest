@@ -1,0 +1,54 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" 
+                access="global" controller="GetData">
+    <aura:attribute name="QA_B_Status" type="String[]" default="Minor,Medium,High,Critical,Show stopper" />
+    <aura:attribute name="QABForm" type="QA_B_API__c" default="{'sobjectType': 'QA_B_API__c'}"  />
+    <aura:attribute name="nameshem" type="qazwsx1__name_shem_API__c" default="{'sobjectType': 'qazwsx1__name_shem_API__c'}"  />
+ 	<aura:attribute name="PageHeading" type="String" default="QAB Header"/> 
+    <aura:attribute name="PageFooter" type="String" default="QAB Footer"/>
+    <div class="slds-m-top--xx-large">
+    <div class="slds-page-header">
+    <div class="slds-align--absolute-center">
+    <div class="slds-text-heading--large">
+        {!v.PageHeading}  
+    </div>
+        </div>
+    </div>
+    </div> 
+    <div class= "slds-size--3-of-8" >
+    	<lightning:input label="Enter QA B Name" name="QABname" placeholder="Input Name" required="true" value="{!v.QABForm.Name}"/>
+        <br/>    
+        <lightning:select label="QA B status" name="ststusPick" value="{!v.QABForm.Status_API__c}">
+            <aura:iteration items="{!v.QA_B_Status}" var="hrs">
+                <option value="{!hrs}" text="{!hrs}" />  
+            </aura:iteration>  
+        </lightning:select>  
+    <br/>
+    <div class="slds-form-element">
+      <label class="slds-form-element__label" for="textarea-id-01">Description</label>
+      <div class="slds-form-element__control">
+        <textarea id="textarea-id-01" class="slds-textarea" placeholder="Description Text" name="QABname" value="{!v.QABForm.Description_API__c}"></textarea>
+      </div>
+    </div>
+        <br/>
+        <lightning:input aura:id="checkBox" type="checkbox" label="Active/Inactive" name="firstcheckbox" value="{!v.QABForm.Active_API__c}"/> 
+        <lightning:input aura:id="checkBox" type="checkbox" label="Active/Inactive" name="firstcheckbox" value="{!v.nameshem.qazwsx1__shem1_API__c}"/> 
+    <br/>
+        
+        
+        
+        
+        <br/>
+        <div style="height: 180px;">
+  <div class="slds-docked-form-footer">
+    
+    <lightning:button label="SAVE" class="slds-button slds-button_brand" onclick="{!c.doSubmit}"></lightning:button>
+    <button type="button" class="slds-button slds-button_neutral">Cancel</button>
+      
+      
+  </div>
+            
+        
+</div>
+      
+    </div>
+</aura:component>

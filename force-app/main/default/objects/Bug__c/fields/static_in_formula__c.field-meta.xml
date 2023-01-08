@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>static_in_formula__c</fullName>
+    <description>for static resource relation in formula</description>
+    <externalId>false</externalId>
+    <formula>IMAGE(&quot;/resource/MA_SalesforceSecurityLogo&quot;, &quot;some image&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>static in formula</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Custom_Setting_List_Number__c</fullName>
+    <defaultValue>123456789</defaultValue>
+    <description>Custom Setting List Number</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Custom Setting List Number</inlineHelpText>
+    <label>Custom Setting List Number</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

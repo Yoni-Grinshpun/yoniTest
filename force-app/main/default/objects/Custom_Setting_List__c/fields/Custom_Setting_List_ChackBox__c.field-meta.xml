@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Custom_Setting_List_ChackBox__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Custom Setting List ChackBox</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Custom Setting List ChackBox</inlineHelpText>
+    <label>Custom Setting List ChackBox</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

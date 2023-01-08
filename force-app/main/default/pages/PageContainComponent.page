@@ -1,0 +1,11 @@
+<!--
+ - Created by idan on 24/01/2018.
+ -->
+
+<apex:page id="PageContainComponent">
+
+    This Page Contain ComponentDemo1
+
+    <c:ComponentDemo1 />
+
+</apex:page>

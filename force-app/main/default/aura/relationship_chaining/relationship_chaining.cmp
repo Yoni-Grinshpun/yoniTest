@@ -1,0 +1,18 @@
+<aura:component controller="relationship_chaining" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	<aura:attribute name="contact" type="Contact" />
+    <aura:attribute name="bugObj" type="Bug__c" />
+    <aura:attribute name="simpelRecord" type="Object" />
+    <aura:handler name="init" value="{!this}" action="{!c.loadContacts}"/>
+     <aura:handler name="init" value="{!this}" action="{!c.loadBugObj}"/>
+
+    <p>
+        {!v.contact.Account.Owner.LastName}
+    </p>
+    <p>
+      {!v.bugObj.Bug_TestedBy_Name__c} 
+    </p>
+  <div>
+      {!v.simpelRecord.Bug_email_Name__c}
+    </div>
+    
+</aura:component>

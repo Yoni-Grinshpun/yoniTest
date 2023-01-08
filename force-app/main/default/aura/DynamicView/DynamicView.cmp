@@ -1,0 +1,15 @@
+<aura:component controller="DynamicViewlightning" implements="force:appHostable,flexipage:availableForAllPageTypes" access="global" >
+	<aura:attribute name="contacts"  type="Contact[]"/>
+    <aura:attribute name="fieldNames" type="String[]" default='["Name", "Account.Name", "Owner.Name", "Owner.Email"]'/>
+
+    <aura:handler name="init" value="{!this}" action="{!c.loadContacts}" />
+    TEST1
+    <aura:iteration items="{!v.contacts}" var="contact" >
+        TEST2
+    <aura:iteration items="{!v.fieldNames}" var="fieldName">
+        {!fieldName}<br/>
+        <c:ContactAndFieldName contact="{!contact}" fieldName="{!fieldName}" />
+    </aura:iteration>
+    {!v.contact.Name}
+    </aura:iteration>
+</aura:component>

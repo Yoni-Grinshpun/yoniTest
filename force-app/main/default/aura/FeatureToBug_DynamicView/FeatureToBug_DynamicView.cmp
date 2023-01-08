@@ -1,0 +1,6 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	<aura:attribute name="bug"  type="Bug__c[]"/>
+    <aura:attribute name="fieldNames" type="String[]" default='["Name","Bug_TestedBy_Name__c"]'/>
+    <aura:handler name="init" value="{!this}" action="{!c.loadbug}" />
+    
+</aura:component>

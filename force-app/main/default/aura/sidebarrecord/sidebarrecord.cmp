@@ -1,0 +1,30 @@
+<aura:component implements="lightning:recordHomeTemplate" description="Full-width header above main column and small,in addition to collapsible right sidebar.">
+
+    <aura:attribute name="header" type="Aura.Component[]" description="Header region" />
+    <aura:attribute name="main" type="Aura.Component[]" description="Main region" />
+    <aura:attribute name="side" type="Aura.Component[]" description="side region" />
+    <aura:attribute name="sidebar" type="Aura.Component[]" description="Collapsible sidebar region" />
+
+    <aura:attribute name="isSidebarCollapsed" type="Boolean" access="PRIVATE" default="true" />
+
+    <div>
+        <div>{!v.header}</div>
+        <lightning:layout class="slds-m-top_medium">
+            <lightning:layoutItem flexibility="auto">
+                {!v.main}
+            </lightning:layoutItem>
+            <lightning:layoutItem size="4" padding="horizontal-small">
+                {!v.side}
+            </lightning:layoutItem>
+            <lightning:layoutItem flexibility="no-flex">
+
+                <lightning:buttonIcon onclick="{!c.toggleSection}" class="fullsize design-allow-interaction toggle slds-p-around_xxx-small slds-m-horizontal_xx-small" variant="border-filled" iconName="{! v.isSidebarCollapsed ? 'utility:chevronleft' : 'utility:chevronright' }"
+                    alternativeText="{! v.isSidebarCollapsed ? 'Expand Sidebar' : 'Collapse Sidebar' }" />
+
+            </lightning:layoutItem>
+            <lightning:layoutItem class="{! v.isSidebarCollapsed ? ' slds-hide' : '' }" size="3">
+                {!v.sidebar}
+            </lightning:layoutItem>
+        </lightning:layout>
+    </div>
+</aura:component>

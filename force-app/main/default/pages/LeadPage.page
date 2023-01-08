@@ -1,0 +1,6 @@
+<apex:page standardController="Lead">
+
+<apex:outputField value="{!Lead.Formula_Mirror_Test_With_Default__c}"/>
+
+<c:leadcomponent />
+</apex:page>

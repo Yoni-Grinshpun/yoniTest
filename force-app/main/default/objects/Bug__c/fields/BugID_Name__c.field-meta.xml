@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BugID_Name__c</fullName>
+    <description>BugID description</description>
+    <displayFormat>B-{0000}</displayFormat>
+    <externalId>false</externalId>
+    <inlineHelpText>BugID Help</inlineHelpText>
+    <label>BugID_Label</label>
+    <trackTrending>false</trackTrending>
+    <type>AutoNumber</type>
+</CustomField>

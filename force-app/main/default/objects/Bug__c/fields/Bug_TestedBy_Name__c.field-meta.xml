@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Bug_TestedBy_Name__c</fullName>
+    <description>Tested By description</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Tested By help</inlineHelpText>
+    <label>Tested By Label</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Itay</fullName>
+                <default>true</default>
+                <label>Itay</label>
+            </value>
+            <value>
+                <fullName>Vlad</fullName>
+                <default>false</default>
+                <label>Vlad</label>
+            </value>
+            <value>
+                <fullName>Dima</fullName>
+                <default>false</default>
+                <label>Dima</label>
+            </value>
+            <value>
+                <fullName>Eyal</fullName>
+                <default>false</default>
+                <label>Eyal</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

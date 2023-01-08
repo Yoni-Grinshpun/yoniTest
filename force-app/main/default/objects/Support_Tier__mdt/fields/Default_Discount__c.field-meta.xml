@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Default_Discount__c</fullName>
+    <description>Adding a custom field to a custom metadata type is just like adding a custom field to a standard or custom object. First, let’s create a field for the default discount.</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Default Discount</label>
+    <precision>2</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <type>Percent</type>
+</CustomField>

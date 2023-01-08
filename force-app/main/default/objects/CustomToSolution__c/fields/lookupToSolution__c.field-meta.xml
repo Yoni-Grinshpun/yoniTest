@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>lookupToSolution__c</fullName>
+    <externalId>false</externalId>
+    <label>Lookup to Solution</label>
+    <referenceTo>Solution</referenceTo>
+    <relationshipLabel>CustomToSolution To Solution</relationshipLabel>
+    <relationshipName>CustomToSolution</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

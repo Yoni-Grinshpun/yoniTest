@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Bug_priority_Name__c</fullName>
+    <description>Bug priority description</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Bug priority Help</inlineHelpText>
+    <label>Bug priority Label</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Global_BugPriority</valueSetName>
+    </valueSet>
+</CustomField>

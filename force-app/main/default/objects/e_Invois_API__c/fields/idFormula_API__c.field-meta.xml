@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>idFormula_API__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(RecordType.Id == &apos;0120R000000UzlF&apos;, true, false) || IF( RecordTypeId == &apos;0120R000000Uzgx&apos;, true, false)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>idFormula</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

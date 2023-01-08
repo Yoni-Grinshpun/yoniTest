@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cmtRule</fullName>
+    <active>true</active>
+    <errorConditionFormula>Acc_relation__r.DeveloperName &lt;&gt; &apos;eyal&apos;</errorConditionFormula>
+    <errorMessage>not tlv</errorMessage>
+</ValidationRule>

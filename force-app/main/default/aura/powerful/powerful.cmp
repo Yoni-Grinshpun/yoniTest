@@ -1,0 +1,5 @@
+<aura:component >
+	 <p>
+        {!v.contact.Account.Owner.LastName != 'TestString' ? 'This need to be True (OK)' : 'powerful'} <br/>
+    </p>
+</aura:component>

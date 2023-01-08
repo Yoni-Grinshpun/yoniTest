@@ -1,0 +1,7 @@
+<!--
+ - Created by idan on 24/01/2018.
+ -->
+
+<apex:component id="ComponentDemo1">
+    This is  {!$User.FirstName} {!$User.LastName}
+</apex:component>

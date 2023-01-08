@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RT_formula_API__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(RecordType.Name == &apos;Boom_API&apos;, true, false) ||
+IF(RecordType.DeveloperName == &apos;esela&apos;, true, false) ||
+IF( RecordType.Id == &apos;0120R000000Uzgx&apos;, true, false)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>RT_formula</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

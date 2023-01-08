@@ -1,0 +1,21 @@
+<!--
+ - Created by idan on 17/01/2018.
+ -->
+
+<aura:component controller="relationship_chaining" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:attribute name="contact" type="Contact" />
+    <aura:attribute name="Bug" type="Bug__c" />
+
+    <aura:handler name="init" value="{!this}" action="{!c.loadContacts}"/>
+
+    <p>
+        {!v.contact.Account.Owner.LastName != 'TestString' ? 'This need to be True (OK)' : 'This is not True'} <br/>
+    </p>
+    <p>
+        {!v.contact.Account.Owner.LastName == 'TestString' ? 'This is not True' : 'This need to be True (OK)'} <br/>
+    </p>
+    <p>
+        {!v.Bug.Bug_TestedBy_Name__c}
+    </p>    
+{!v.contact.Account.Owner.LastName}
+</aura:component>

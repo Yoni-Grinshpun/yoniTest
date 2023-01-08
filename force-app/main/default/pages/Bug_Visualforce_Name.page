@@ -1,0 +1,4 @@
+<apex:page id="VisualforceInPageLayoutBug__c" standardController="Bug__c">
+    
+    {!if (Bug__c.Name=='esela',"","")}
+</apex:page>

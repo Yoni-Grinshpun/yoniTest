@@ -1,0 +1,7 @@
+<design:component >
+    <design:attribute name="PageHeading" label="Page Heading" Datasource="header1,header2,header3" Description="from picklist in QA_B__c"></design:attribute>
+	<!--<design:attribute name="PageFooter" label="Page Footer" Datasource="header1,header2,header3" datasource="apex://FromDesign"></design:attribute>-->
+        
+    
+
+</design:component>

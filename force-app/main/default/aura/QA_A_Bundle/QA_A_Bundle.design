@@ -1,0 +1,3 @@
+<design:component>
+<design:attribute name="ForDesign" datasource="QA_A_API__c.Global_Picklist_API__c"/> 
+</design:component>
